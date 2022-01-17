@@ -1,7 +1,7 @@
 <?php
 
 
-namespace kagatan\MikBillAdminAPI;
+namespace Kagatan\MikBillAdminAPI;
 
 
 use GuzzleHttp\Client;
