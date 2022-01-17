@@ -8,17 +8,13 @@ use GuzzleHttp\Client;
 
 class AdminAPI
 {
-    private $_host = '';
     private $_token;
 
     public function __construct($login = '', $pass = '', $host = false)
     {
-        if ($host) {
-            $this->_host = $host;
-        }
 
         $this->client = new Client([
-            'base_uri' => $this->_host,
+            'base_uri' => $host,
             'cookies'  => true,
             'verify'   => false
         ]);
