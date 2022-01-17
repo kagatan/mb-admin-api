@@ -1,0 +1,29 @@
+{
+  "name": "kagatan/mb-admin-api",
+  "description": "Class for working with Mikbill Admin",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "keywords": [
+    "MikBill",
+    "admin",
+    "mb",
+    "users",
+    "api",
+    "cabinet",
+    "app"
+  ],
+  "authors": [
+    {
+      "name": "Kagatan",
+      "email": "stupakovmax@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kagatan\\MikBillAdminAPI\\": "src/"
+    }
+  }
+}
