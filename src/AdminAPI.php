@@ -278,6 +278,17 @@ class AdminAPI
         return $this->sendRequest('/json/users/paymentdoflex', $params);
     }
 
+    /**
+     * Получить краткую историю по абоненту
+     *
+     * @param $params
+     * @return bool|mixed
+     */
+    public function getUserCanvasStat($params)
+    {
+        return $this->sendRequest('/json/users/getusercanvasstat', $params);
+    }
+
     public function consoleMe($params)
     {
         return $this->sendRequest('/json/options/consolme', $params);
