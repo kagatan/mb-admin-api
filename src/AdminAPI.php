@@ -54,11 +54,8 @@ class AdminAPI
         return false;
     }
 
-    public function getUser($user_id)
+    public function getUser($params)
     {
-        $params = [
-            'uid' => $user_id
-        ];
         return $this->sendRequest('/json/users/getuserdatambp', $params);
     }
 
