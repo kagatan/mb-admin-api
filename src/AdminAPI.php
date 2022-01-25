@@ -272,6 +272,17 @@ class AdminAPI
     }
 
     /**
+     * История платежей по абоненту
+     *
+     * @param $params
+     * @return bool|mixed
+     */
+    public function getUsersHistoryPayments($params)
+    {
+         return $this->sendRequest('/json/users/statpaymfl', $params);
+    }
+
+    /**
      * Получить краткую историю по абоненту
      *
      * @param $params

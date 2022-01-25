@@ -35,6 +35,43 @@ $mbAPI = new AdminAPI($login, $pass, $host);
 
 // Проверим авторизацию в биллинге
 $res = $mbAPI->checkLoggedIn();
+
+// Получить всех абонентов
+//$res = $mbAPI->getUsers(); 
+
+// Получить абонентов с фильтрацией по уид
+$res = $mbAPI->getUsers([
+    'uid' => 34579
+]);
+
 var_dump($res);
 
 ```
+
+## Methods
+
+### checkLoggedIn
+**Описание:** проверка авторизации в биллинге сотрудника
+
+
+### getUsers
+**Описание:** получить пользователей (запрос тяжелый)
+
+**URI:** /json/users/searchflex
+
+**Параметры:** 
+ - uid - uid пользователя
+ 
+ 
+### getUsersHistoryPayments
+
+**Описание:** получить историю плтажей
+
+**URI:** /json/users/statpaymfl
+
+**Параметры:** 
+  - uid:7 - uid пользователя
+  - from_date: 2021-12-28 - "дата от"
+  - to_date: 2021-12-31 - "дата до"
+  
+ 
