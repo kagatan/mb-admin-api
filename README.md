@@ -65,7 +65,7 @@ var_dump($res);
  
 ### getUsersHistoryPayments
 
-**Описание:** получить историю плтажей
+**Описание:** получить историю платежей
 
 **URI:** /json/users/statpaymfl
 

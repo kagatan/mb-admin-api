@@ -171,6 +171,15 @@ class AdminAPI
         return $this->sendRequest('/extjs/users/createabonent', $params);
     }
 
+    public function deleteHouse($houseId)
+    {
+        $params = [
+            "houseid" => $houseId
+        ];
+
+        return $this->sendRequest('/json/options/delhouseflex', $params);
+    }
+
     public function addHouse($params)
     {
         return $this->sendRequest('/json/options/addhouseflex', $params);
@@ -279,7 +288,7 @@ class AdminAPI
      */
     public function getUsersHistoryPayments($params)
     {
-         return $this->sendRequest('/json/users/statpaymfl', $params);
+        return $this->sendRequest('/json/users/statpaymfl', $params);
     }
 
     /**
