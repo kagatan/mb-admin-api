@@ -291,6 +291,11 @@ class AdminAPI
         return $this->sendRequest('/json/users/statpaymfl', $params);
     }
 
+    public function getSystemOptions($params)
+    {
+        return $this->sendRequest('/extjs/users/getsystemoptions');
+    }
+
     /**
      * Получить краткую историю по абоненту
      *
