@@ -291,7 +291,7 @@ class AdminAPI
         return $this->sendRequest('/json/users/statpaymfl', $params);
     }
 
-    public function getSystemOptions($params)
+    public function getSystemOptions()
     {
         return $this->sendRequest('/extjs/users/getsystemoptions');
     }
