@@ -308,15 +308,21 @@ class AdminAPI
     }
 
     /**
-     * Краткая история
+     * Выкинуть абонента
      *
      * @param $params
      * @return bool|mixed
      */
+    public function userKickOnline($params)
+    {
+        return $this->sendRequest('/json/users/userkickfl', $params);
+    }
+
     public function getUserShortHistory($params)
     {
         return $this->sendRequest('/extjs/users/usershorthistory', $params);
     }
+
 
     public function consoleMe($params)
     {
