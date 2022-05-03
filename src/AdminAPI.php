@@ -297,7 +297,7 @@ class AdminAPI
     }
 
     /**
-     * Получить краткую историю по абоненту
+     * Получить краткую историю по абоненту. Old
      *
      * @param $params
      * @return bool|mixed
@@ -305,6 +305,17 @@ class AdminAPI
     public function getUserCanvasStat($params)
     {
         return $this->sendRequest('/json/users/getusercanvasstat', $params);
+    }
+
+    /**
+     * Краткая история
+     *
+     * @param $params
+     * @return bool|mixed
+     */
+    public function getUserShortHistory($params)
+    {
+        return $this->sendRequest('/extjs/users/usershorthistory', $params);
     }
 
     public function consoleMe($params)
